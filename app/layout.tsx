@@ -81,7 +81,7 @@ export default function RootLayout({
             <head>
                 <Script
                     async
-                    src="https://www.googletagmanager.com/gtm.js?id=GTM-5XZPLV6V"
+                    src="https://www.googletagmanager.com/gtm.js?id=G-4QELL004YN"
                     strategy="beforeInteractive"
                 />
                 <Script id="google-analytics" strategy="beforeInteractive">
