@@ -96,7 +96,7 @@ export default function RootLayout({
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
                 />
             </head>
-            <body className={`${inter.className} bg-gray-50 text-gray-900`}>
+            <body>
                 
                 <main>{children}</main>
                 
