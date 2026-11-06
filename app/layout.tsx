@@ -97,9 +97,9 @@ export default function RootLayout({
                 />
             </head>
             <body className={`${inter.className} bg-gray-50 text-gray-900`}>
-                <Navbar />
+                
                 <main>{children}</main>
-                <Footer />
+                
             </body>
         </html>
     );
