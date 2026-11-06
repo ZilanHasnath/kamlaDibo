@@ -5,7 +5,7 @@ export const metadata = {
   description: "Find the nearest place where day laborers gather in Dhaka to get hired.",
 };
 
-export const viewport = { width: "device-width", initialScale: 1, themeColor: "#1877f2" };
+export const viewport = { width: "device-width", initialScale: 1, themeColor: "#3b6ef0" };
 
 export default function RootLayout({ children }) {
   return (
