@@ -1,5 +1,5 @@
 const BASE = [
-  { id: "asad-gate", en: "Asad Gate", bn: "মোহাম্মদপুর", lat: 23.7601299, lng: 90.3727245,
+  { id: "asad-gate", en: "Mohammadpur", bn: "মোহাম্মদপুর", lat: 23.7601299, lng: 90.3727245,
     road: "Mirpur Road / Manik Mia Avenue", roadBn: "মিরপুর রোড, মানিক মিয়া অ্যাভিনিউর মোড়ে",
     work: ["Construction", "Loading", "Painting"], workBn: ["রাজমিস্ত্রির জোগালি", "মাল তোলা-নামা", "রঙের কাজ"] },
   { id: "gabtoli", en: "Gabtoli Bus Stop", bn: "গাবতলী বাস স্টপ", lat: 23.7824951, lng: 90.3393413,
