@@ -79,20 +79,12 @@ export default function RootLayout({
     return (
         <html lang="en">
             <head>
-                <Script
-                    async
-                    src="https://www.googletagmanager.com/gtag/js?id=G-XE6ZJE8VFZ"
-                    strategy="beforeInteractive"
-                />
-                <Script id="google-analytics" strategy="beforeInteractive">
-                    {`
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-
-                        gtag('config', 'G-XE6ZJE8VFZ');
-                    `}
-                </Script>
+                <script async src="https://www.googletagmanager.com/gtm.js?id=G-XE6ZJE8VFZ"></script>
+                <script>
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                </script>
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
