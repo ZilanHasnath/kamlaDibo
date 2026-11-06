@@ -24,7 +24,7 @@ export const metadata = {
         "labor hiring app Dhaka",
         "Mohammadpur day labor spot",
         "construction worker hire Dhaka",
-        "শ্রমিক খোঁজার জায়গা",
+        "শ্রমিক খোঁজার জায়গা",
         "দিনমজুর সমাবেশ স্থল",
         "Zilan Hasnath Lithon"
     ],
@@ -38,7 +38,7 @@ export const metadata = {
         url: "https://kamladibo.vercel.app/",
         siteName: "কামলা দিবো | Kamla Dibo",
         title: "কামলা দিবো | Kamla Dibo - Day Laborer Gathering Spots & Hiring in Dhaka",
-        description: "দিনমজুর ও শ্রমিকদের খোঁজার এবং যোগাযোগের সবচেয়ে নির্ভরযোগ্য ডিজিটাল প্ল্যাটফর্ম। Find the nearest day laborer gathering spots in Dhaka.",
+        description: "দিনমজুর ও শ্রমিকদের খোঁজার এবং যোগাযোগের সবচেয়ে নির্ভরযোগ্য ডিজিটাল প্ল্যাটফর্ম। Find the nearest day laborer gathering spots in Dhaka.",
     },
     twitter: {
         card: "summary_large_image",
@@ -78,17 +78,14 @@ export default function RootLayout({ children }) {
                     rel="stylesheet"
                 />
                 <Script
-                    async
                     src="https://www.googletagmanager.com/gtm.js?id=GTM-W67QXMVN"
-                    strategy="beforeInteractive"
+                    strategy="afterInteractive"
                 />
-                <Script id="google-analytics" strategy="beforeInteractive">
+                <Script id="google-analytics" strategy="afterInteractive">
                     {`
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}
                         gtag('js', new Date());
-
-                        gtag('config', 'GTM-W67QXMVN');
                     `}
                 </Script>
                 <script
