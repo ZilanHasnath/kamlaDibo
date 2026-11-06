@@ -52,7 +52,7 @@ export const metadata = {
     },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "WebSite",
@@ -78,10 +78,11 @@ export default function RootLayout({ children }) {
                     rel="stylesheet"
                 />
                 <Script
+                    async
                     src="https://www.googletagmanager.com/gtm.js?id=GTM-W67QXMVN"
-                    strategy="afterInteractive"
+                    strategy="beforeInteractive"
                 />
-                <Script id="google-analytics" strategy="afterInteractive">
+                <Script id="google-analytics" strategy="beforeInteractive">
                     {`
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}
