@@ -81,14 +81,16 @@ export default function RootLayout({
             <head>
                 <Script
                     async
-                    src="https://www.googletagmanager.com/gtm.js?id=GTM-TKFMKL8Z"
+                    src="https://www.googletagmanager.com/gtag/js?id=GTM-TKFMKL8Z"
                     strategy="beforeInteractive"
                 />
-                <Script id="google-tag-manager" strategy="beforeInteractive">
+                <Script id="google-analytics" strategy="beforeInteractive">
                     {`
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}
                         gtag('js', new Date());
+
+                        gtag('config', 'GTM-TKFMKL8Z');
                     `}
                 </Script>
                 <script
@@ -96,8 +98,10 @@ export default function RootLayout({
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
                 />
             </head>
-            <body style={{ fontFamily: "'Hind Siliguri', sans-serif" }} className="bg-gray-50 text-gray-900">
+            <body className={`${inter.className} bg-gray-50 text-gray-900`}>
+                <Navbar />
                 <main>{children}</main>
+                <Footer />
             </body>
         </html>
     );
