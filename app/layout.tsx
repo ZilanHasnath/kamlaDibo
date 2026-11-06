@@ -1,13 +1,14 @@
-import Script from "next/script";
-import "./globals.css";
+import type { Metadata, Viewport } from 'next';
+import Script from 'next/script';
+import './globals.css';
 
-export const viewport = {
-    width: "device-width",
+export const viewport: Viewport = {
+    width: 'device-width',
     initialScale: 1,
-    themeColor: "#3b6ef0",
+    themeColor: '#3b6ef0',
 };
 
-export const metadata = {
+export const metadata: Metadata = {
     metadataBase: new URL("https://kamladibo.vercel.app"),
     title: {
         default: "কামলা দিবো | Kamla Dibo - Day Laborer Gathering Spots & Hiring in Dhaka",
@@ -52,7 +53,11 @@ export const metadata = {
     },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+    children,
+}: {
+    children: React.ReactNode;
+}) {
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "WebSite",
@@ -64,25 +69,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         "creator": {
             "@type": "Person",
             "name": "Zilan Hasnath Lithon",
-            "url": "https://zilanhasnathlithon.vercel.app/"
+            "url": "https://zilanhasnathlithon.vercel.app/",
+            "sameAs": [
+                "https://x.com/ZilanHasnath"
+            ]
         }
     };
 
     return (
         <html lang="bn">
             <head>
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
-                    rel="stylesheet"
-                />
                 <Script
                     async
-                    src="https://www.googletagmanager.com/gtm.js?id=GTM-W67QXMVN"
+                    src="https://www.googletagmanager.com/gtm.js?id=GTM-TKFMKL8Z"
                     strategy="beforeInteractive"
                 />
-                <Script id="google-analytics" strategy="beforeInteractive">
+                <Script id="google-tag-manager" strategy="beforeInteractive">
                     {`
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}
